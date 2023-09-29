@@ -70,7 +70,7 @@ const register = async (req, res) => {
       email,
       password,
     });
-    console.log(dataValues);
+    console.log(dataValues);  
     dataValues.password = undefined;
 
     const token = await getToken({
